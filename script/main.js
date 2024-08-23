@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 try {
                     result.value = eval(result.value);
                 } catch {
-                    result.value = 'Error';
+                    result.value = '計算できねぇﾄﾚｰ';
                 }
             } else {
                 result.value += value;
