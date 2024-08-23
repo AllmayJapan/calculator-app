@@ -10,9 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 result.value = '';
             } else if (value === '=') {
                 try {
+                    // eval()を使用して計算を実行
                     result.value = eval(result.value);
-                } catch {
-                    result.value = '計算できねぇﾄﾚｰ';
+                } catch (error) {
+                    // 計算エラーが発生した場合の処理
+                    result.value = 'Error';
                 }
             } else {
                 result.value += value;
